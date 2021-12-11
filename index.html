@@ -9,15 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css"/>
+
+    <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
       
     <header class="header">
-        <div class="container header-container">
+        <div class=" header__container container">
             <nav class="navigation">
-                <a href="./index.html" class="link list logo logo--margin" lang="en">
-                    <span class="logo__color">Web</span>Studio</a>
+                <a href="./index.html" class="link list logo navigation__logo" lang="en">
+                    <span class="logo__accent">Web</span>Studio</a>
                 <ul class="list pagination">
                     <li class="pagination__item">
                         <a href="./index.html" class="link pagination__link pagination__link--current">Студия</a>
@@ -47,9 +48,9 @@
         </div>
     </header>
     <main>
-        <section class="hero section section--hero"> 
+        <section class="hero section hero__section"> 
             <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button class="button button-margin" type="button" data-modal-open>Заказать услугу</button>         
+                <button class="button hero__button" type="button" data-modal-open>Заказать услугу</button>         
         </section>
         <section class="section">
             <div class="container">
@@ -376,12 +377,12 @@
                     </ul>   
                 </div>
             </div>
-            <div class="social social--direction social--margin">
+            <div class="social social--direction container__social">
                     <h3 class="social__title">подпишитесь на рассылку</h3>
                     <div class="social__form">
                     <label for="mail"></label>  
                     <input class="form__input" type="email" name="mail" id="mail" placeholder="E-mail" />
-                    <button class="button button--position button--margin-left" type="submit">Подписаться
+                    <button class="button button--position social__button" type="submit">Подписаться
                     <svg class="button__icon" width="24" height="24">
                         <use href="./images/icons.svg#icon-send"></use>
                     </svg>
